@@ -85,6 +85,25 @@
     "events": { "input": "Triggered when a color is clicked" }
   },
   "gux-command-palette": {},
+  "gux-context-search": {
+    "attributes": {
+      "value": "text",
+      "title": "text",
+      "placeholder": "text",
+      "disabled": "checkbox",
+      "disable-navigation-mode": "checkbox",
+      "match-count": "text",
+      "current-match": "text",
+      "navigation-label": "text",
+      "next-label": "text",
+      "previous-label": "text",
+      "erase-label": "text"
+    },
+    "events": {
+      "input": "Triggered when value is changed",
+      "navigate": "Triggered when navigate is clicked"
+    }
+  },
   "gux-datepicker": {
     "attributes": {
       "mode": ["single", "range"],
