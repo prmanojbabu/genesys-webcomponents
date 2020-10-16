@@ -15,11 +15,11 @@ import contextSearchResources from './i18n/en.json';
 
 @Component({
   styleUrl: 'gux-context-search.less',
-  tag: 'gux-context-search'
+  tag: 'gux-context-search-beta'
 })
 export class GuxContextSearch {
   @Element()
-  root: HTMLGuxContextSearchElement;
+  root: HTMLGuxContextSearchBetaElement;
   inputElement: HTMLInputElement;
 
   /**
@@ -100,14 +100,14 @@ export class GuxContextSearch {
    * @return The input value
    */
   @Event()
-  input: EventEmitter;
+  input: EventEmitter<any>;
 
   /**
    * Triggered when user click navigate buttons.
    * @return The Current match value
    */
   @Event()
-  navigate: EventEmitter;
+  navigate: EventEmitter<number>;
 
   private i18n: GetI18nValue;
 
@@ -264,7 +264,9 @@ export class GuxContextSearch {
     if (this.inputElement && this.navigateCountPanel) {
       this.inputElement.setAttribute(
         'style',
-        `padding-right: ${83 + this.navigateCountPanel.clientWidth}px`
+        `padding-right: ${
+          83 + Math.ceil(this.navigateCountPanel.clientWidth)
+        }px`
       );
     }
   }

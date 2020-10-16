@@ -20,7 +20,7 @@
 @focus-outline: fade(@gux-genesys-blue, 50%);
 @focus-border: @gux-genesys-dark-blue;
 
-gux-context-search {
+gux-context-search-beta {
   display: block;
   min-width: 300px;
 
@@ -123,7 +123,7 @@ gux-context-search {
       height: 16px;
       border-right: 1px solid @hair-line-color;
 
-    .gux-navigation-result {
+      .gux-navigation-result {
         position: absolute;
         padding-top: 0;
         padding-right: 8px;
@@ -137,7 +137,7 @@ gux-context-search {
         white-space: nowrap;
       }
 
-    .gux-previous-button {
+      .gux-previous-button {
         padding-top: 0;
         padding-right: 8px;
         padding-bottom: 0;
@@ -147,7 +147,7 @@ gux-context-search {
         right: 24px;
       }
 
-    .gux-next-button {
+      .gux-next-button {
         padding-top: 0;
         padding-right: 8px;
         padding-bottom: 0;
@@ -163,7 +163,7 @@ gux-context-search {
 // Theming
 
 // Dark
-.gux-context-search-dark-theme {
+.gux-context-search-beta-dark-theme {
   .gux-context {
     input {
       .gux-input-dark-theme();
@@ -184,17 +184,17 @@ gux-context-search {
 }
 
 .gux-dark-theme {
-  gux-context-search {
-    .gux-context-search-dark-theme();
+  gux-context-search-beta {
+    .gux-context-search-beta-dark-theme();
   }
 }
 
-gux-context-search.gux-dark-theme {
-  .gux-context-search-dark-theme();
+gux-context-search-beta.gux-dark-theme {
+  .gux-context-search-beta-dark-theme();
 }
 
 // Light
-.gux-context-search-light-theme {
+.gux-context-search-beta-light-theme {
   .gux-context {
     input {
       background-color: @background-color;
@@ -230,16 +230,16 @@ gux-context-search.gux-dark-theme {
 }
 
 .gux-light-theme {
-  gux-context-search {
-    .gux-context-search-light-theme();
+  gux-context-search-beta {
+    .gux-context-search-beta-light-theme();
   }
 }
 
-gux-context-search.gux-light-theme {
-  .gux-context-search-light-theme();
+gux-context-search-beta.gux-light-theme {
+  .gux-context-search-beta-light-theme();
 }
 
 // Default Theme
-gux-context-search {
-  .gux-context-search-light-theme();
+gux-context-search-beta {
+  .gux-context-search-beta-light-theme();
 }

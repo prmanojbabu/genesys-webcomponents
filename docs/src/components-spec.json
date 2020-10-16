@@ -85,7 +85,9 @@
     "events": { "input": "Triggered when a color is clicked" }
   },
   "gux-command-palette": {},
-  "gux-context-search": {
+  "gux-context-search": {},
+  "gux-context-search-beta": {
+    "hidePage": true,
     "attributes": {
       "value": "text",
       "title": "text",
@@ -95,8 +97,8 @@
       "match-count": "text",
       "current-match": "text",
       "navigation-label": "text",
-      "next-label": "text",
       "previous-label": "text",
+      "next-label": "text",
       "erase-label": "text"
     },
     "events": {

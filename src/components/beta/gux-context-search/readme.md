@@ -1,4 +1,4 @@
-# gux-context-search
+# gux-context-search-beta
 
 
 
@@ -24,10 +24,10 @@
 
 ## Events
 
-| Event      | Description                                 | Type               |
-| ---------- | ------------------------------------------- | ------------------ |
-| `input`    | Triggered when user inputs.                 | `CustomEvent<any>` |
-| `navigate` | Triggered when user click navigate buttons. | `CustomEvent<any>` |
+| Event      | Description                                 | Type                  |
+| ---------- | ------------------------------------------- | --------------------- |
+| `input`    | Triggered when user inputs.                 | `CustomEvent<any>`    |
+| `navigate` | Triggered when user click navigate buttons. | `CustomEvent<number>` |
 
 
 ## Methods
@@ -72,8 +72,8 @@ Type: `Promise<void>`
 ### Graph
 ```mermaid
 graph TD;
-  gux-context-search --> gux-icon
-  style gux-context-search fill:#f9f,stroke:#333,stroke-width:4px
+  gux-context-search-beta --> gux-icon
+  style gux-context-search-beta fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
