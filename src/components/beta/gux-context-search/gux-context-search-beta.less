@@ -29,25 +29,18 @@ gux-context-search-beta {
     height: 16px;
   }
 
-  > div {
-    margin: 4px 0;
-
-    &.gux-disabled {
-      opacity: 0.5;
-      pointer-events: none;
-      cursor: default;
-    }
-
-    > div.gux-context {
-      position: relative;
-      height: 32px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
+  .gux-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
   }
 
   .gux-context {
     position: relative;
+    height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 4px 0;
 
     input {
       .gux-input-style();
@@ -105,7 +98,7 @@ gux-context-search-beta {
       }
     }
 
-    &.gux-navigation-disabled {
+    .gux-navigation-disabled {
       opacity: 0.5;
       pointer-events: auto;
       cursor: default;
@@ -171,14 +164,11 @@ gux-context-search-beta {
 
     button {
       color: @dark-icon-color;
-    }
-  }
-
-  &:not([disabled]):hover,
-  &:not([disabled]):focus {
-    button {
-      color: @dark-icon-hover-color;
-      opacity: 1;
+      &:not([disabled]):hover,
+      &:not([disabled]):focus {
+        color: @dark-icon-hover-color;
+        opacity: 1;
+      }
     }
   }
 }

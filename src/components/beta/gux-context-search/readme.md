@@ -16,9 +16,9 @@
 
 ## Events
 
-| Event      | Description                                  | Type                  |
-| ---------- | -------------------------------------------- | --------------------- |
-| `navigate` | Triggered when user clicks navigate buttons. | `CustomEvent<number>` |
+| Event                    | Description                                | Type                  |
+| ------------------------ | ------------------------------------------ | --------------------- |
+| `guxcurrentmatchchanged` | Triggered when Current match value changes | `CustomEvent<number>` |
 
 
 ## Methods

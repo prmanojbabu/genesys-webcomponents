@@ -268,16 +268,16 @@ describe('gux-context-search-beta', () => {
 
     describe('methods', () => {
       it('clear', async () => {
-        const navigateSpy = jest.fn();
-        component.navigate = {
-          emit: navigateSpy
+        const guxCurrentMatchChangedSpy = jest.fn();
+        component.guxcurrentmatchchanged = {
+          emit: guxCurrentMatchChangedSpy
         };
         component.matchCount = 100;
         component.currentMatch = 3;
         await component.clear();
         expect(component.matchCount).toEqual(0);
         expect(component.currentMatch).toEqual(0);
-        expect(component.navigate.emit).toHaveBeenCalledWith(0);
+        expect(component.guxcurrentmatchchanged.emit).toHaveBeenCalledWith(0);
       });
 
       it('clear when disable is true', async () => {
@@ -287,16 +287,18 @@ describe('gux-context-search-beta', () => {
           language: 'en'
         });
         component = page.rootInstance;
-        const navigateSpy = jest.fn();
-        component.navigate = {
-          emit: navigateSpy
+        const guxCurrentMatchChangedSpy = jest.fn();
+        component.guxcurrentmatchchanged = {
+          emit: guxCurrentMatchChangedSpy
         };
         component.matchCount = 100;
         component.currentMatch = 3;
         await component.clear();
         expect(component.matchCount).not.toEqual(0);
         expect(component.currentMatch).not.toEqual(0);
-        expect(component.navigate.emit).not.toHaveBeenCalledWith(0);
+        expect(component.guxcurrentmatchchanged.emit).not.toHaveBeenCalledWith(
+          0
+        );
       });
     });
   });

@@ -264,7 +264,9 @@ describe('gux-context-search-beta', () => {
       let element = await page.find('gux-context-search-beta');
       let clearButton = await page.find('.gux-clear-button');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(clearButton).toBeNull();
@@ -276,7 +278,7 @@ describe('gux-context-search-beta', () => {
       await input.press('KeyT');
       await page.waitForChanges();
       expect(inputSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       clearButton = await page.find('.gux-clear-button');
       element = await page.find('gux-context-search-beta');
       expect(clearButton).not.toBeNull();
@@ -294,7 +296,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
       matchCount = await element.getProperty('matchCount');
       expect(inputSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).toHaveReceivedEventTimes(1);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(1);
       expect(value).toBe('');
       expect(currentMatch).toBe(0);
       expect(matchCount).toBe(0);
@@ -310,7 +312,9 @@ describe('gux-context-search-beta', () => {
       let element = await page.find('gux-context-search-beta');
       let clearButton = await page.find('.gux-clear-button');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(clearButton).toBeNull();
@@ -322,7 +326,7 @@ describe('gux-context-search-beta', () => {
       await input.press('KeyT');
       await page.waitForChanges();
       expect(inputSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       clearButton = await page.find('.gux-clear-button');
       element = await page.find('gux-context-search-beta');
       expect(clearButton).not.toBeNull();
@@ -340,7 +344,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
       matchCount = await element.getProperty('matchCount');
       expect(inputSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).toHaveReceivedEventTimes(1);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(1);
       expect(value).toBe('');
       expect(currentMatch).toBe(0);
       expect(matchCount).toBe(0);
@@ -356,7 +360,9 @@ describe('gux-context-search-beta', () => {
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
       let value = await input.getProperty('value');
       let currentMatch = await element.getProperty('currentMatch');
@@ -377,7 +383,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
       matchCount = await element.getProperty('matchCount');
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(value).toBe('TEST');
       expect(currentMatch).toBe(1);
       expect(matchCount).toBe(20);
@@ -400,7 +406,9 @@ describe('gux-context-search-beta', () => {
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(element).toHaveClass('hydrated');
@@ -424,8 +432,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(1);
-      expect(navigateSpy).toHaveReceivedEventDetail(2);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(1);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(2);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -446,8 +454,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(2);
-      expect(navigateSpy).toHaveReceivedEventDetail(3);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(2);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(3);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -468,8 +476,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(3);
-      expect(navigateSpy).toHaveReceivedEventDetail(1);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(3);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(1);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -490,8 +498,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).toHaveReceivedEventDetail(3);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(4);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(3);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -512,8 +520,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(5);
-      expect(navigateSpy).toHaveReceivedEventDetail(2);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(5);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(2);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -534,8 +542,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(6);
-      expect(navigateSpy).toHaveReceivedEventDetail(1);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(6);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(1);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -556,8 +564,8 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).toHaveReceivedEventTimes(7);
-      expect(navigateSpy).toHaveReceivedEventDetail(3);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(7);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(3);
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -577,8 +585,8 @@ describe('gux-context-search-beta', () => {
       matchCount = await element.getProperty('matchCount');
       currentMatch = await element.getProperty('currentMatch');
 
-      expect(navigateSpy).toHaveReceivedEventTimes(8);
-      expect(navigateSpy).toHaveReceivedEventDetail(0);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventTimes(8);
+      expect(guxCurrentMatchChangedSpy).toHaveReceivedEventDetail(0);
       expect(clearButton).toBeNull();
       expect(nextButton).toBeNull();
       expect(previousButton).toBeNull();
@@ -602,7 +610,9 @@ describe('gux-context-search-beta', () => {
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(element).toHaveClass('hydrated');
@@ -628,7 +638,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -651,7 +661,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -678,7 +688,9 @@ describe('gux-context-search-beta', () => {
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(element).toHaveClass('hydrated');
@@ -704,7 +716,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -727,7 +739,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -754,7 +766,9 @@ describe('gux-context-search-beta', () => {
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(element).toHaveClass('hydrated');
@@ -781,7 +795,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -805,7 +819,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -833,7 +847,9 @@ describe('gux-context-search-beta', () => {
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
 
       expect(element).toHaveClass('hydrated');
@@ -860,7 +876,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -884,7 +900,7 @@ describe('gux-context-search-beta', () => {
       currentMatch = await element.getProperty('currentMatch');
 
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       expect(clearButton).not.toBeNull();
       expect(nextButton).not.toBeNull();
       expect(previousButton).not.toBeNull();
@@ -908,7 +924,9 @@ describe('gux-context-search-beta', () => {
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
       let value = await input.getAttribute('value');
 
@@ -922,7 +940,7 @@ describe('gux-context-search-beta', () => {
       await input.press('KeyT');
       await page.waitForChanges();
       expect(inputSpy).not.toHaveReceivedEvent();
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       value = await input.getProperty('value');
 
       expect(value).toBe('');
@@ -938,7 +956,9 @@ describe('gux-context-search-beta', () => {
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
       const input = await element.find('input');
-      const navigateSpy = await page.spyOnEvent('navigate');
+      const guxCurrentMatchChangedSpy = await page.spyOnEvent(
+        'guxcurrentmatchchanged'
+      );
       const inputSpy = await page.spyOnEvent('input');
       let value = await input.getProperty('value');
 
@@ -952,7 +972,7 @@ describe('gux-context-search-beta', () => {
       await input.press('KeyT');
       await page.waitForChanges();
       expect(inputSpy).toHaveReceivedEventTimes(4);
-      expect(navigateSpy).not.toHaveReceivedEvent();
+      expect(guxCurrentMatchChangedSpy).not.toHaveReceivedEvent();
       value = await input.getProperty('value');
 
       expect(value).toBe('test');

@@ -3,12 +3,10 @@
 exports[`gux-context-search-beta #render should render default control no props 1`] = `
 <gux-context-search-beta>
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input type="text" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
+  <div class="gux-context">
+    <input type="text" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
   </div>
 </gux-context-search-beta>
@@ -17,12 +15,10 @@ exports[`gux-context-search-beta #render should render default control no props 
 exports[`gux-context-search-beta #render should render default control no props With placeholder 1`] = `
 <gux-context-search-beta>
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
   </div>
 </gux-context-search-beta>
@@ -31,28 +27,26 @@ exports[`gux-context-search-beta #render should render default control no props 
 exports[`gux-context-search-beta #render should render default control with all props 1`] = `
 <gux-context-search-beta current-match="1" match-count="10">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-panel" title="1 of 10">
-          <span aria-label="1 of 10" class="gux-navigation-result">
-            1 of 10
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-panel" title="1 of 10">
+        <span aria-label="1 of 10" class="gux-navigation-result">
+          1 of 10
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -61,28 +55,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
-          <span aria-label="10 Matches" class="gux-navigation-result">
-            10 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
+        <span aria-label="10 Matches" class="gux-navigation-result">
+          10 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -91,28 +83,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode with 1 match 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
-          <span aria-label="1 Match" class="gux-navigation-result">
-            1 Match
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
+        <span aria-label="1 Match" class="gux-navigation-result">
+          1 Match
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -121,28 +111,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode with 100 match & long text 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
-          <span aria-label="10 Matches" class="gux-navigation-result">
-            10 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
+        <span aria-label="10 Matches" class="gux-navigation-result">
+          10 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -151,28 +139,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode with 1000000 match & long text 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1000000">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
-          <span aria-label="1,000,000 Matches" class="gux-navigation-result">
-            1,000,000 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
+        <span aria-label="1,000,000 Matches" class="gux-navigation-result">
+          1,000,000 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -181,28 +167,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode with 1000000 match 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1000000">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
-          <span aria-label="1,000,000 Matches" class="gux-navigation-result">
-            1,000,000 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
+        <span aria-label="1,000,000 Matches" class="gux-navigation-result">
+          1,000,000 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -211,28 +195,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode & disable Navigate Mode with no match 1`] = `
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="0">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
-          <span aria-label="0 Matches" class="gux-navigation-result">
-            0 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
+        <span aria-label="0 Matches" class="gux-navigation-result">
+          0 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -241,28 +223,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode 1`] = `
 <gux-context-search-beta current-match="10" match-count="10">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="10 of 10">
-          <span aria-label="10 of 10" class="gux-navigation-result">
-            10 of 10
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="10 of 10">
+        <span aria-label="10 of 10" class="gux-navigation-result">
+          10 of 10
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -271,28 +251,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode with 1 match 1`] = `
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
-          <span aria-label="1 of 1" class="gux-navigation-result">
-            1 of 1
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
+        <span aria-label="1 of 1" class="gux-navigation-result">
+          1 of 1
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -301,28 +279,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode with 100000000 match 1`] = `
 <gux-context-search-beta current-match="10000" match-count="100000000">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="10,000 of 100,000,000">
-          <span aria-label="10,000 of 100,000,000" class="gux-navigation-result">
-            10,000 of 100,000,000
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="10,000 of 100,000,000">
+        <span aria-label="10,000 of 100,000,000" class="gux-navigation-result">
+          10,000 of 100,000,000
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -331,28 +307,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode with long value 1`] = `
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
-          <span aria-label="1 of 1" class="gux-navigation-result">
-            1 of 1
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
+        <span aria-label="1 of 1" class="gux-navigation-result">
+          1 of 1
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -361,28 +335,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode with long value with 100000000 match 1`] = `
 <gux-context-search-beta current-match="1100" match-count="100000001">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1,100 of 100,000,001">
-          <span aria-label="1,100 of 100,000,001" class="gux-navigation-result">
-            1,100 of 100,000,001
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1,100 of 100,000,001">
+        <span aria-label="1,100 of 100,000,001" class="gux-navigation-result">
+          1,100 of 100,000,001
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -391,28 +363,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable mode with no match 1`] = `
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
-  <div aria-label="Context Search" class="gux-disabled">
-    <div class="gux-context">
-      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
-          <span aria-label="0 of 0" class="gux-navigation-result">
-            0 of 0
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context gux-disabled">
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
+        <span aria-label="0 of 0" class="gux-navigation-result">
+          0 of 0
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" disabled="" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -421,28 +391,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable navigate mode 1`] = `
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
-          <span aria-label="10 Matches" class="gux-navigation-result">
-            10 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
+        <span aria-label="10 Matches" class="gux-navigation-result">
+          10 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -451,28 +419,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable navigate mode with 1 matches 1`] = `
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="1">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
-          <span aria-label="1 Match" class="gux-navigation-result">
-            1 Match
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
+        <span aria-label="1 Match" class="gux-navigation-result">
+          1 Match
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -481,28 +447,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable navigate mode with 100000000 matches 1`] = `
 <gux-context-search-beta current-match="1000" disable-navigation="true" match-count="100000000">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="100,000,000 Matches">
-          <span aria-label="100,000,000 Matches" class="gux-navigation-result">
-            100,000,000 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="100,000,000 Matches">
+        <span aria-label="100,000,000 Matches" class="gux-navigation-result">
+          100,000,000 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -511,28 +475,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props in disable navigate mode with no matches 1`] = `
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="0">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
-          <span aria-label="0 Matches" class="gux-navigation-result">
-            0 Matches
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
+        <span aria-label="0 Matches" class="gux-navigation-result">
+          0 Matches
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -541,28 +503,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with invalid  match count 1`] = `
 <gux-context-search-beta current-match="1000" match-count="abc">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
-          <span aria-label="0 of 0" class="gux-navigation-result">
-            0 of 0
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
+        <span aria-label="0 of 0" class="gux-navigation-result">
+          0 of 0
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -571,28 +531,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with invalid current match 1`] = `
 <gux-context-search-beta current-match="100000" match-count="100">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-panel" title="1 of 100">
-          <span aria-label="1 of 100" class="gux-navigation-result">
-            1 of 100
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-panel" title="1 of 100">
+        <span aria-label="1 of 100" class="gux-navigation-result">
+          1 of 100
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -601,28 +559,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with long text 1 match 1`] = `
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-panel" title="1 of 1">
-          <span aria-label="1 of 1" class="gux-navigation-result">
-            1 of 1
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-panel" title="1 of 1">
+        <span aria-label="1 of 1" class="gux-navigation-result">
+          1 of 1
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -631,28 +587,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with long text 100000 match 1`] = `
 <gux-context-search-beta current-match="1000" match-count="100000">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-panel" title="1,000 of 100,000">
-          <span aria-label="1,000 of 100,000" class="gux-navigation-result">
-            1,000 of 100,000
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-panel" title="1,000 of 100,000">
+        <span aria-label="1,000 of 100,000" class="gux-navigation-result">
+          1,000 of 100,000
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -661,28 +615,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with long text no match 1`] = `
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
-          <span aria-label="0 of 0" class="gux-navigation-result">
-            0 of 0
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
+        <span aria-label="0 of 0" class="gux-navigation-result">
+          0 of 0
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -691,28 +643,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with no match 1`] = `
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
-          <span aria-label="0 of 0" class="gux-navigation-result">
-            0 of 0
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
+        <span aria-label="0 of 0" class="gux-navigation-result">
+          0 of 0
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" disabled="" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" disabled="" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
@@ -721,28 +671,26 @@ exports[`gux-context-search-beta #render should render default control with all 
 exports[`gux-context-search-beta #render should render default control with all props with short text 100000 match 1`] = `
 <gux-context-search-beta current-match="1000" match-count="100000">
   <!---->
-  <div aria-label="Context Search">
-    <div class="gux-context">
-      <input placeholder="Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
-      <div class="gux-search-icon">
-        <gux-icon decorative="" iconname="ic-search"></gux-icon>
-      </div>
-      <div>
-        <div class="gux-navigation-panel" title="1,000 of 100,000">
-          <span aria-label="1,000 of 100,000" class="gux-navigation-result">
-            1,000 of 100,000
-          </span>
-          <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
-          </button>
-          <button aria-label="Next" class="gux-next-button" title="Next" type="button">
-            <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
-          </button>
-        </div>
-        <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
-          <gux-icon decorative="" iconname="ic-close"></gux-icon>
+  <div class="gux-context">
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
+    <div class="gux-search-icon">
+      <gux-icon decorative="" iconname="ic-search"></gux-icon>
+    </div>
+    <div>
+      <div class="gux-navigation-panel" title="1,000 of 100,000">
+        <span aria-label="1,000 of 100,000" class="gux-navigation-result">
+          1,000 of 100,000
+        </span>
+        <button aria-label="Previous" class="gux-previous-button" title="Previous" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-up"></gux-icon>
+        </button>
+        <button aria-label="Next" class="gux-next-button" title="Next" type="button">
+          <gux-icon decorative="" iconname="ic-arrow-solid-down"></gux-icon>
         </button>
       </div>
+      <button aria-label="Clear" class="gux-clear-button" title="Clear" type="button">
+        <gux-icon decorative="" iconname="ic-close"></gux-icon>
+      </button>
     </div>
   </div>
 </gux-context-search-beta>
