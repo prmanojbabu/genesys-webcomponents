@@ -12,39 +12,24 @@ import {
 
 import { buildI18nForComponent, GetI18nValue } from '../../../i18n';
 import contextSearchResources from './i18n/en.json';
+import onDisabledChange from './utils/on-disabled-change/on-disabled-change';
 
 @Component({
-  styleUrl: 'gux-context-search.less',
+  styleUrl: 'gux-context-search-beta.less',
   tag: 'gux-context-search-beta'
 })
-export class GuxContextSearch {
+export class GuxContextSearchBeta {
+  private inputSlottedElement: HTMLInputElement;
+  private navigateCountPanel: HTMLSpanElement;
+
   @Element()
-  root: HTMLGuxContextSearchBetaElement;
-  inputElement: HTMLInputElement;
-
-  /**
-   * Indicate the input value
-   */
-  @Prop({ mutable: true, reflectToAttr: true })
-  value: string = '';
-
-  /**
-   * Disable the input and prevent interactions.
-   */
-  @Prop()
-  disabled: boolean = false;
+  private root: HTMLGuxContextSearchBetaElement;
 
   /**
    * Disables the Next and Previous buttons.
    */
   @Prop()
-  disableNavigationMode: boolean = false;
-
-  /**
-   * The input placeholder.
-   */
-  @Prop()
-  placeholder: string;
+  disableNavigation: boolean = false;
 
   /**
    * The Match Count
@@ -58,49 +43,11 @@ export class GuxContextSearch {
   @Prop({ mutable: true })
   currentMatch: number = 0;
 
-  /**
-   * The label for the erase button
-   */
-  @Prop()
-  eraseLabel: string;
-
-  /**
-   * The label for the navigate panel
-   */
-  @Prop()
-  navigationLabel: string;
-
-  /**
-   * The label for the navigate next button
-   */
-  @Prop()
-  nextLabel: string;
-
-  /**
-   * The label for the navigate previous button
-   */
-  @Prop()
-  previousLabel: string;
-
-  /**
-   * Aria label to use in case the text field
-   * does not have an actual label.
-   */
-  @Prop()
-  srLabel: string;
+  @State()
+  private disabled: boolean;
 
   @State()
-  srLabelledby: string;
-
-  @State()
-  navigateCountPanel: HTMLSpanElement;
-
-  /**
-   * Triggered when user inputs.
-   * @return The input value
-   */
-  @Event()
-  input: EventEmitter<any>;
+  private value: string;
 
   /**
    * Triggered when user click navigate buttons.
@@ -127,36 +74,25 @@ export class GuxContextSearch {
     this.value = '';
     this.matchCount = 0;
     this.currentMatch = 0;
-    this.inputElement.value = '';
-    this.inputElement.focus();
-    this.input.emit(this.value);
-    this.navigate.emit(this.currentMatch);
-  }
-
-  /**
-   * Provides an aria-labelledby element for this component.
-   * @param id The value for aria-labeledby.
-   */
-  @Method()
-  async setLabelledBy(id: string) {
-    this.srLabelledby = id;
-  }
-
-  /**
-   * Sets the input focus to the text input.
-   */
-  @Method()
-  async setInputFocus() {
-    this.inputElement.focus();
+    this.inputSlottedElement.value = '';
+    this.emitNavigate();
   }
 
   async componentWillLoad() {
     this.i18n = await buildI18nForComponent(this.root, contextSearchResources);
+    this.inputSlottedElement = this.root.querySelector('input');
+    this.disabled = this.inputSlottedElement.disabled;
+    this.value = this.inputSlottedElement.value;
+    onDisabledChange(this.inputSlottedElement, (disabled: boolean) => {
+      this.disabled = disabled;
+    });
+    this.inputSlottedElement.addEventListener('input', e => this.onInput(e));
+    this.setMatchCount();
+    this.setCurrentMatch();
+    this.setPaddingForInput();
   }
 
   componentDidLoad() {
-    this.setMatchCount();
-    this.setCurrentMatch();
     this.setPaddingForInput();
   }
 
@@ -164,21 +100,10 @@ export class GuxContextSearch {
     return (
       <div
         class={this.disabled ? 'gux-disabled' : ''}
-        aria-label={this.srLabel}
-        aria-labelledby={this.srLabelledby}
+        aria-label={this.i18n('title')}
       >
         <div class="gux-context">
-          <input
-            class="gux-text-clearable"
-            value={this.value}
-            ref={el => (this.inputElement = el)}
-            aria-label={this.i18n('title')}
-            disabled={this.disabled}
-            placeholder={this.placeholder}
-            onInput={e => this.emitInput(e)}
-            onFocus={e => this.emitFocusEvent(e)}
-            onBlur={e => this.emitFocusEvent(e)}
-          />
+          <slot />
           <div class="gux-search-icon">
             <gux-icon decorative iconName="ic-search"></gux-icon>
           </div>
@@ -190,7 +115,7 @@ export class GuxContextSearch {
                     ? 'gux-navigation-disabled gux-navigation-panel'
                     : 'gux-navigation-panel'
                 }
-                title={this.navigationLabel}
+                title={this.matchCountResult()}
               >
                 {this.showNavigationPanel() && (
                   <span
@@ -204,7 +129,7 @@ export class GuxContextSearch {
                 <button
                   type="button"
                   class="gux-previous-button"
-                  title={this.previousLabel}
+                  title={this.i18n('navigatePreviousBtn')}
                   aria-label={this.i18n('navigatePreviousBtn')}
                   onClick={() => this.previousClick()}
                   disabled={this.disableNavigationPanel()}
@@ -214,7 +139,7 @@ export class GuxContextSearch {
                 <button
                   type="button"
                   class="gux-next-button"
-                  title={this.nextLabel}
+                  title={this.i18n('navigateNextBtn')}
                   aria-label={this.i18n('navigateNextBtn')}
                   onClick={() => this.nextClick()}
                   disabled={this.disableNavigationPanel()}
@@ -228,7 +153,7 @@ export class GuxContextSearch {
               <button
                 type="button"
                 class="gux-clear-button"
-                title={this.eraseLabel}
+                title={this.i18n('eraseBtnAria')}
                 aria-label={this.i18n('eraseBtnAria')}
                 onClick={() => this.clear()}
                 disabled={this.disabled}
@@ -243,7 +168,7 @@ export class GuxContextSearch {
   }
 
   private matchCountResult(): string {
-    if (this.disableNavigationMode) {
+    if (this.disableNavigation) {
       if (this.matchCount === 1) {
         return this.i18n('match', {
           matchCount: this.matchCount
@@ -261,12 +186,14 @@ export class GuxContextSearch {
     }
   }
   private setPaddingForInput() {
-    if (this.inputElement && this.navigateCountPanel) {
-      this.inputElement.setAttribute(
+    if (this.inputSlottedElement) {
+      let paddingWidth = 83;
+      if (this.navigateCountPanel && this.navigateCountPanel.clientWidth) {
+        paddingWidth = 83 + Math.ceil(this.navigateCountPanel.clientWidth);
+      }
+      this.inputSlottedElement.setAttribute(
         'style',
-        `padding-right: ${
-          83 + Math.ceil(this.navigateCountPanel.clientWidth)
-        }px`
+        `padding-right: ${paddingWidth}px`
       );
     }
   }
@@ -276,7 +203,7 @@ export class GuxContextSearch {
   }
 
   private disableNavigationPanel(): boolean {
-    return this.disabled || this.disableNavigationMode || this.matchCount <= 0;
+    return this.disabled || this.disableNavigation || this.matchCount <= 0;
   }
 
   private setMatchCount(): void {
@@ -328,20 +255,13 @@ export class GuxContextSearch {
     }
   }
 
-  private emitInput(event) {
+  private onInput(event) {
     if (this.disabled) {
       return;
     }
-    event.preventDefault();
-    event.stopPropagation();
     this.value = event.target.value;
     this.setPaddingForInput();
     this.resetCurrentMatch();
-    this.input.emit(event.target.value);
-  }
-
-  private emitFocusEvent(event) {
-    this.root.dispatchEvent(new FocusEvent(event.type, event));
   }
 
   private emitNavigate() {

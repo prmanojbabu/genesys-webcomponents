@@ -6,248 +6,215 @@ describe('gux-context-search-beta', () => {
       {
         description: 'default control with 0 Match',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "0 Matches Found"
-        current-match="0"
-        match-count="0"></gux-context-search-beta>`
+          lang="en"
+          current-match="0"
+          match-count="0">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 1 Match',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "1 Matches Found"
-        current-match="1"
-        match-count="1"></gux-context-search-beta>`
+          lang="en"
+          current-match="1"
+          match-count="1">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 2 Match',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "2 Matches Found"
-        current-match="1"
-        match-count="2"></gux-context-search-beta>`
+          lang="en"
+          current-match="1"
+          match-count="2">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 2000000 Match',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "2000000 Matches Found"
-        current-match="1"
-        match-count="2000000"></gux-context-search-beta>`
+          lang="en"
+          current-match="1"
+          match-count="2000000">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
-        description: 'control with 0 Match disable-navigation-mode="true"',
+        description: 'control with 0 Match disable-navigation="true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "0 Matches Found"
-        current-match="0"
-        match-count="0"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="0"
+          match-count="0">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
-        description: 'control with 1 Match disable-navigation-mode="true"',
+        description: 'control with 1 Match disable-navigation="true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "1 Matches Found"
-        current-match="1"
-        match-count="1"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1"
+          match-count="1">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
-        description:
-          'default control with 2 Match disable-navigation-mode="true"',
+        description: 'default control with 2 Match disable-navigation="true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "2 Matches Found"
-        current-match="1"
-        match-count="2"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1"
+          match-count="1">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description:
-          'default control with 200000 Match disable-navigation-mode="true"',
+          'default control with 200000 Match disable-navigation="true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "200000 Matches Found"
-        current-match="1"
-        match-count="200000"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1000"
+          match-count="200000">
+          <input type="text"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 0 Match disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disabled ="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "0 Matches Found"
-        current-match="0"
-        match-count="0"></gux-context-search-beta>`
+          lang="en"
+          current-match="0"
+          match-count="0">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 1 Match disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disabled ="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "1 Matches Found"
-        current-match="1"
-        match-count="1"></gux-context-search-beta>`
+          lang="en"
+          current-match="1"
+          match-count="1">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 2 Match disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disabled ="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "2 Matches Found"
-        current-match="1"
-        match-count="2"></gux-context-search-beta>`
+          lang="en"
+          current-match="2"
+          match-count="2">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description: 'default control with 200000 Match disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disabled ="true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "200000 Matches Found"
-        current-match="1"
-        match-count="200000"></gux-context-search-beta>`
+          lang="en"
+          current-match="2"
+          match-count="200000">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description:
-          'control with 0 Match disable-navigation-mode="true" & disabled= "true"',
+          'control with 0 Match disable-navigation="true" & disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        disabled= "true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "0 Matches Found"
-        current-match="0"
-        match-count="0"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="0"
+          match-count="0">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description:
-          'control with 1 Match disable-navigation-mode="true" & disabled= "true"',
+          'control with 1 Match disable-navigation="true" & disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        disabled= "true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "1 Matches Found"
-        current-match="1"
-        match-count="1"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1"
+          match-count="1">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description:
-          'default control with 2 Match disable-navigation-mode="true" disabled= "true"',
+          'default control with 2 Match disable-navigation="true" disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        disabled= "true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "2 Matches Found"
-        current-match="1"
-        match-count="2"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1"
+          match-count="2">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       },
       {
         description:
-          'default control with 200000 Match disable-navigation-mode="true" disabled= "true"',
+          'default control with 200000 Match disable-navigation="true" disabled= "true"',
         html: `<gux-context-search-beta
-        lang="en"
-        placeholder="Search"
-        title = "Context Search"
-        value="Default Search Text"
-        disable-navigation-mode="true"
-        disabled= "true"
-        erase-label="clear"
-        next-label="Next"
-        previous-label="Previous"
-        navigation-label= "200000 Matches Found"
-        current-match="1"
-        match-count="200000"></gux-context-search-beta>`
+          lang="en"
+          disable-navigation="true"
+          current-match="1000"
+          match-count="200000">
+          <input type="text"
+          disabled="true"
+          placeholder="Search"
+          title = "Context Search"
+          value="Default Search Text"/>
+        </gux-context-search-beta>`
       }
     ].forEach(({ description, html }) => {
       it(description, async () => {
@@ -256,18 +223,35 @@ describe('gux-context-search-beta', () => {
         const previousButton = await page.find('.gux-previous-button');
         const nextButton = await page.find('.gux-next-button');
         const clearButton = await page.find('.gux-clear-button');
-        const input = await element.find('.gux-text-clearable');
-        expect(element.outerHTML).toMatchSnapshot();
-
-        previousButton.click();
+        const input = await element.find('input');
+        // Added to mock setPaddingForInput final state
+        await page.$eval('input', (elm: HTMLInputElement) => {
+          elm.setAttribute('style', `padding-right: 120px`);
+        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
-        nextButton.click();
+        await previousButton.click();
+        // Added to mock setPaddingForInput final state
+        await page.$eval('input', (elm: HTMLInputElement) => {
+          elm.setAttribute('style', `padding-right: 120px`);
+        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
-        clearButton.click();
+        await nextButton.click();
+        // Added to mock setPaddingForInput final state
+        await page.$eval('input', (elm: HTMLInputElement) => {
+          elm.setAttribute('style', `padding-right: 120px`);
+        });
+        await page.waitForChanges();
+        expect(element.outerHTML).toMatchSnapshot();
+
+        await clearButton.click();
+        // Added to mock setPaddingForInput final state
+        await page.$eval('input', (elm: HTMLInputElement) => {
+          elm.setAttribute('style', `padding-right: 120px`);
+        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
@@ -275,6 +259,10 @@ describe('gux-context-search-beta', () => {
         await input.press('KeyE');
         await input.press('KeyS');
         await input.press('KeyT');
+        // Added to mock setPaddingForInput final state
+        await page.$eval('input', (elm: HTMLInputElement) => {
+          elm.setAttribute('style', `padding-right: 120px`);
+        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
       });
@@ -286,12 +274,12 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" current-match="1" match-count="20"></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="20"><input type="text" /></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
       let clearButton = await page.find('.gux-clear-button');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -321,23 +309,23 @@ describe('gux-context-search-beta', () => {
       value = await input.getProperty('value');
       currentMatch = await element.getProperty('currentMatch');
       matchCount = await element.getProperty('matchCount');
-      expect(inputSpy).toHaveReceivedEventTimes(5);
+      expect(inputSpy).toHaveReceivedEventTimes(4);
       expect(navigateSpy).toHaveReceivedEventTimes(1);
       expect(value).toBe('');
       expect(currentMatch).toBe(0);
       expect(matchCount).toBe(0);
     });
 
-    it('should clickable when the disableNavigationMode is true', async () => {
+    it('should clickable when the disableNavigation is true', async () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" current-match="1" match-count="20" disable-navigation-mode="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="20" disable-navigation="true"><input type="text" /></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
       let clearButton = await page.find('.gux-clear-button');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -367,7 +355,7 @@ describe('gux-context-search-beta', () => {
       value = await input.getProperty('value');
       currentMatch = await element.getProperty('currentMatch');
       matchCount = await element.getProperty('matchCount');
-      expect(inputSpy).toHaveReceivedEventTimes(5);
+      expect(inputSpy).toHaveReceivedEventTimes(4);
       expect(navigateSpy).toHaveReceivedEventTimes(1);
       expect(value).toBe('');
       expect(currentMatch).toBe(0);
@@ -378,12 +366,12 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="TEST" current-match="1" match-count="20" disabled="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="20" ><input type="text" disabled="true" value="TEST" /></gux-context-search-beta>'
       );
 
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
       let value = await input.getProperty('value');
@@ -417,7 +405,7 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="Test" current-match="1" match-count="3"></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="3"><input type="text" value="Test"/></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
@@ -427,7 +415,7 @@ describe('gux-context-search-beta', () => {
       let resultSpan = await page.find('.gux-navigation-result');
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -605,7 +593,6 @@ describe('gux-context-search-beta', () => {
       matchCount = await element.getProperty('matchCount');
       currentMatch = await element.getProperty('currentMatch');
 
-      expect(inputSpy).toHaveReceivedEvent();
       expect(navigateSpy).toHaveReceivedEventTimes(8);
       expect(navigateSpy).toHaveReceivedEventDetail(0);
       expect(clearButton).toBeNull();
@@ -620,7 +607,7 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="Test" current-match="0" match-count="0"></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="0" match-count="0"><input type="text" value="Test"/></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
@@ -630,7 +617,7 @@ describe('gux-context-search-beta', () => {
       let resultSpan = await page.find('.gux-navigation-result');
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -692,11 +679,11 @@ describe('gux-context-search-beta', () => {
       expect(previousButton).toHaveAttribute('disabled');
     });
 
-    it('should be disabled when the disableNavigationMode is true', async () => {
+    it('should be disabled when the disableNavigation is true', async () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="Test" current-match="1" match-count="1" disable-navigation-mode="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="1" disable-navigation="true" ><input type="text" value="Test"/></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
@@ -706,7 +693,7 @@ describe('gux-context-search-beta', () => {
       let resultSpan = await page.find('.gux-navigation-result');
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -768,11 +755,11 @@ describe('gux-context-search-beta', () => {
       expect(previousButton).toHaveAttribute('disabled');
     });
 
-    it('should be disabled when the disableNavigationMode is true & disabled is true', async () => {
+    it('should be disabled when the disableNavigation is true & disabled is true', async () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="Test" current-match="0" match-count="0"  disabled="true" disable-navigation-mode="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="0" match-count="0" disable-navigation="true" ><input type="text" disabled="true" value="Test"/></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
@@ -782,7 +769,7 @@ describe('gux-context-search-beta', () => {
       let resultSpan = await page.find('.gux-navigation-result');
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -851,7 +838,7 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" value="Test" current-match="1" match-count="1" disabled="true"></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="1"><input type="text" disabled="true" value="Test"/></gux-context-search-beta>'
       );
 
       let element = await page.find('gux-context-search-beta');
@@ -861,7 +848,7 @@ describe('gux-context-search-beta', () => {
       let resultSpan = await page.find('.gux-navigation-result');
       let matchCount = await element.getProperty('matchCount');
       let currentMatch = await element.getProperty('currentMatch');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
 
@@ -932,15 +919,14 @@ describe('gux-context-search-beta', () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" current-match="1" match-count="20" disabled="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="20"><input type="text" disabled="true" value="" /></gux-context-search-beta>'
       );
-
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
-      let value = await input.getProperty('value');
+      let value = await input.getAttribute('value');
 
       expect(input).toHaveAttribute('disabled');
       expect(clearButton).toBeNull();
@@ -958,16 +944,16 @@ describe('gux-context-search-beta', () => {
       expect(value).toBe('');
     });
 
-    it('should  allow key entry when disable-navigate-mode is true', async () => {
+    it('should  allow key entry when disable-navigation is true', async () => {
       const page = await newE2EPage();
 
       await page.setContent(
-        '<gux-context-search-beta lang="en" current-match="1" match-count="20" disable-navigate-mode="true" ></gux-context-search-beta>'
+        '<gux-context-search-beta lang="en" current-match="1" match-count="20" disable-navigation="true" ><input type="text"/></gux-context-search-beta>'
       );
 
       const element = await page.find('gux-context-search-beta');
       const clearButton = await page.find('.gux-clear-button');
-      const input = await element.find('.gux-text-clearable');
+      const input = await element.find('input');
       const navigateSpy = await page.spyOnEvent('navigate');
       const inputSpy = await page.spyOnEvent('input');
       let value = await input.getProperty('value');

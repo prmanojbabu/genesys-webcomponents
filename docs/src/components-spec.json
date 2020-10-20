@@ -89,20 +89,11 @@
   "gux-context-search-beta": {
     "hidePage": true,
     "attributes": {
-      "value": "text",
-      "title": "text",
-      "placeholder": "text",
-      "disabled": "checkbox",
-      "disable-navigation-mode": "checkbox",
+      "disable-navigation": "checkbox",
       "match-count": "text",
-      "current-match": "text",
-      "navigation-label": "text",
-      "previous-label": "text",
-      "next-label": "text",
-      "erase-label": "text"
+      "current-match": "text"
     },
     "events": {
-      "input": "Triggered when value is changed",
       "navigate": "Triggered when navigate is clicked"
     }
   },
