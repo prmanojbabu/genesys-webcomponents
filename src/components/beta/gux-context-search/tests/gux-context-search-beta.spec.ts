@@ -25,168 +25,168 @@ describe('gux-context-search-beta', () => {
       {
         description: 'should render default control with all props',
         html: `<gux-context-search-beta current-match="1"match-count="10">
-          <input type="text" placeholder="Search" title="Context Search" value="Default Search Text"/>
+          <input type="text" placeholder="Search" value="Default Search Text"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with no match',
         html: `<gux-context-search-beta current-match="0" match-count="0">
-          <input type="text" placeholder="Search" title="Context Search" value="Default Search Text"/>
+          <input type="text" placeholder="Search" value="Default Search Text"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with long text no match',
         html: `<gux-context-search-beta current-match="0" match-count="0">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
          </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with long text 1 match',
         html: `<gux-context-search-beta current-match="1" match-count="1">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with short text 100000 match',
         html: `<gux-context-search-beta current-match="1000" match-count="100000">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor "/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor "/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with long text 100000 match',
         html: `<gux-context-search-beta current-match="1000" match-count="100000">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with invalid  match count',
         html: `<gux-context-search-beta current-match="1000" match-count="abc">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props with invalid current match',
         html: `<gux-context-search-beta current-match="100000" match-count="100">
-          <input type="text" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode',
         html: `<gux-context-search-beta current-match="10" match-count="10">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode with no match',
         html: `<gux-context-search-beta current-match="0" match-count="0">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled with no Match"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled with no Match"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode with 1 match',
         html: `<gux-context-search-beta current-match="1" match-count="1">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled with 1 match"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled with 1 match"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode with 100000000 match',
         html: `<gux-context-search-beta current-match="10000" match-count="100000000">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled with big match"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled with big match"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode with long value',
         html: `<gux-context-search-beta current-match="1" match-count="1">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" disabled="true" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode with long value with 100000000 match',
         html: `<gux-context-search-beta current-match="1100" match-count="100000001">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" disabled="true" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable navigate mode',
         html: `<gux-context-search-beta current-match="1" match-count="10" disable-navigation="true">
-          <input type="text" placeholder="Search" title="Context Search" value="Navigation Disabled"/>
+          <input type="text" placeholder="Search" value="Navigation Disabled"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable navigate mode with no matches',
         html: `<gux-context-search-beta current-match="0" match-count="0" disable-navigation="true">
-          <input type="text" placeholder="Search" title="Context Search" value="Navigation Disabled"/>
+          <input type="text" placeholder="Search" value="Navigation Disabled"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable navigate mode with 1 matches',
         html: `<gux-context-search-beta current-match="0" match-count="1" disable-navigation="true">
-          <input type="text" placeholder="Search" title="Context Search" value="Navigation Disabled"/>
+          <input type="text" placeholder="Search" value="Navigation Disabled"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable navigate mode with 100000000 matches',
         html: `<gux-context-search-beta current-match="1000" match-count="100000000" disable-navigation="true">
-          <input type="text" placeholder="Search" title="Context Search" value="Navigation Disabled"/>
+          <input type="text" placeholder="Search" value="Navigation Disabled"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode',
         html: `<gux-context-search-beta current-match="1" match-count="10" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled Navigation Disable"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled Navigation Disable"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode with no match',
         html: `<gux-context-search-beta current-match="0" match-count="0" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled Navigation Disable"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled Navigation Disable"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode with 1 match',
         html: `<gux-context-search-beta current-match="1" match-count="1" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled Navigation Disable"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled Navigation Disable"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode with 1000000 match',
         html: `<gux-context-search-beta current-match="1" match-count="1000000" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Search Disabled Navigation Disable"/>
+          <input type="text" disabled="true" placeholder="Search" value="Search Disabled Navigation Disable"/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode with 100 match & long text',
         html: `<gux-context-search-beta current-match="1" match-count="10" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" disabled="true" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       },
       {
         description:
           'should render default control with all props in disable mode & disable Navigate Mode with 1000000 match & long text',
         html: `<gux-context-search-beta current-match="1" match-count="1000000" disable-navigation="true">
-          <input type="text" disabled="true" placeholder="Search" title="Context Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
+          <input type="text" disabled="true" placeholder="Search" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend."/>
         </gux-context-search-beta>`
       }
     ].forEach(({ description, html }) => {
@@ -205,7 +205,7 @@ describe('gux-context-search-beta', () => {
     beforeEach(async () => {
       const page = await newSpecPage({
         components: [GuxContextSearchBeta],
-        html: `<gux-context-search-beta current-match="1" match-count="10"><input type="text" placeholder="Search" title="Context Search" value="Default Search Text"/></gux-context-search-beta>`,
+        html: `<gux-context-search-beta current-match="1" match-count="10"><input type="text" placeholder="Search" value="Default Search Text"/></gux-context-search-beta>`,
         language: 'en'
       });
       component = page.rootInstance;
@@ -283,7 +283,7 @@ describe('gux-context-search-beta', () => {
       it('clear when disable is true', async () => {
         const page = await newSpecPage({
           components: [GuxContextSearchBeta],
-          html: `<gux-context-search-beta current-match="1" match-count="10"><input disabled="true" type="text" placeholder="Search" title="Context Search" value="Default Search Text"/></gux-context-search-beta>`,
+          html: `<gux-context-search-beta current-match="1" match-count="10"><input disabled="true" type="text" placeholder="Search" value="Default Search Text"/></gux-context-search-beta>`,
           language: 'en'
         });
         component = page.rootInstance;

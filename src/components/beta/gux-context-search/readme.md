@@ -16,9 +16,9 @@
 
 ## Events
 
-| Event      | Description                                 | Type                  |
-| ---------- | ------------------------------------------- | --------------------- |
-| `navigate` | Triggered when user click navigate buttons. | `CustomEvent<number>` |
+| Event      | Description                                  | Type                  |
+| ---------- | -------------------------------------------- | --------------------- |
+| `navigate` | Triggered when user clicks navigate buttons. | `CustomEvent<number>` |
 
 
 ## Methods
@@ -32,6 +32,13 @@ Clears the input.
 Type: `Promise<void>`
 
 
+
+
+## Slots
+
+| Slot | Description                 |
+| ---- | --------------------------- |
+|      | Required slot for input tag |
 
 
 ## Dependencies

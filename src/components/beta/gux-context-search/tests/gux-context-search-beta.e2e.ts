@@ -11,7 +11,6 @@ describe('gux-context-search-beta', () => {
           match-count="0">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -23,7 +22,6 @@ describe('gux-context-search-beta', () => {
           match-count="1">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -35,7 +33,6 @@ describe('gux-context-search-beta', () => {
           match-count="2">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -47,7 +44,6 @@ describe('gux-context-search-beta', () => {
           match-count="2000000">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -60,7 +56,6 @@ describe('gux-context-search-beta', () => {
           match-count="0">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -73,7 +68,6 @@ describe('gux-context-search-beta', () => {
           match-count="1">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -86,7 +80,6 @@ describe('gux-context-search-beta', () => {
           match-count="1">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -100,7 +93,6 @@ describe('gux-context-search-beta', () => {
           match-count="200000">
           <input type="text"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -113,7 +105,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -126,7 +117,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -139,7 +129,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -152,7 +141,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -167,7 +155,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -182,7 +169,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -197,7 +183,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       },
@@ -212,7 +197,6 @@ describe('gux-context-search-beta', () => {
           <input type="text"
           disabled="true"
           placeholder="Search"
-          title = "Context Search"
           value="Default Search Text"/>
         </gux-context-search-beta>`
       }

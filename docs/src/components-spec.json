@@ -94,7 +94,8 @@
       "current-match": "text"
     },
     "events": {
-      "navigate": "Triggered when navigate is clicked"
+      "input": "Standard Event",
+      "navigate": "Triggered when navigate button is clicked"
     }
   },
   "gux-datepicker": {

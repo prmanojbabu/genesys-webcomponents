@@ -33,7 +33,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -63,7 +63,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -93,7 +93,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -123,7 +123,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -153,7 +153,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -183,7 +183,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -213,7 +213,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -243,7 +243,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -273,7 +273,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -303,7 +303,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -333,7 +333,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -363,7 +363,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -393,7 +393,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search" class="gux-disabled">
     <div class="gux-context">
-      <input disabled="true" placeholder="Search" title="Context Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
+      <input disabled="true" placeholder="Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -423,7 +423,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -453,7 +453,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -483,7 +483,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -513,7 +513,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -543,7 +543,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -573,7 +573,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -603,7 +603,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -633,7 +633,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -663,7 +663,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -693,7 +693,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>
@@ -723,7 +723,7 @@ exports[`gux-context-search-beta #render should render default control with all 
   <!---->
   <div aria-label="Context Search">
     <div class="gux-context">
-      <input placeholder="Search" title="Context Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
+      <input placeholder="Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
       <div class="gux-search-icon">
         <gux-icon decorative="" iconname="ic-search"></gux-icon>
       </div>

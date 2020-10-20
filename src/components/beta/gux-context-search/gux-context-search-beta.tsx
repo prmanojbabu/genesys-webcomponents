@@ -14,6 +14,10 @@ import { buildI18nForComponent, GetI18nValue } from '../../../i18n';
 import contextSearchResources from './i18n/en.json';
 import onDisabledChange from './utils/on-disabled-change/on-disabled-change';
 
+/**
+ * @slot  - Required slot for input tag
+ */
+
 @Component({
   styleUrl: 'gux-context-search-beta.less',
   tag: 'gux-context-search-beta'
@@ -50,7 +54,7 @@ export class GuxContextSearchBeta {
   private value: string;
 
   /**
-   * Triggered when user click navigate buttons.
+   * Triggered when user clicks navigate buttons.
    * @return The Current match value
    */
   @Event()
@@ -67,7 +71,7 @@ export class GuxContextSearchBeta {
    * Clears the input.
    */
   @Method()
-  async clear() {
+  async clear(): Promise<void> {
     if (this.disabled) {
       return;
     }
@@ -97,6 +101,7 @@ export class GuxContextSearchBeta {
   }
 
   render() {
+    const disableNavigationPanel = this.disableNavigationPanel();
     return (
       <div
         class={this.disabled ? 'gux-disabled' : ''}
@@ -111,7 +116,7 @@ export class GuxContextSearchBeta {
             <div>
               <div
                 class={
-                  this.disableNavigationPanel()
+                  disableNavigationPanel
                     ? 'gux-navigation-disabled gux-navigation-panel'
                     : 'gux-navigation-panel'
                 }
@@ -132,7 +137,7 @@ export class GuxContextSearchBeta {
                   title={this.i18n('navigatePreviousBtn')}
                   aria-label={this.i18n('navigatePreviousBtn')}
                   onClick={() => this.previousClick()}
-                  disabled={this.disableNavigationPanel()}
+                  disabled={disableNavigationPanel}
                 >
                   <gux-icon decorative iconName="ic-arrow-solid-up"></gux-icon>
                 </button>
@@ -142,7 +147,7 @@ export class GuxContextSearchBeta {
                   title={this.i18n('navigateNextBtn')}
                   aria-label={this.i18n('navigateNextBtn')}
                   onClick={() => this.nextClick()}
-                  disabled={this.disableNavigationPanel()}
+                  disabled={disableNavigationPanel}
                 >
                   <gux-icon
                     decorative
@@ -185,7 +190,7 @@ export class GuxContextSearchBeta {
       });
     }
   }
-  private setPaddingForInput() {
+  private setPaddingForInput(): void {
     if (this.inputSlottedElement) {
       let paddingWidth = 83;
       if (this.navigateCountPanel && this.navigateCountPanel.clientWidth) {
@@ -234,28 +239,30 @@ export class GuxContextSearchBeta {
   }
 
   private nextClick(): void {
-    if (!this.disableNavigationPanel()) {
-      if (this.currentMatch !== this.matchCount) {
-        this.currentMatch++;
-      } else {
-        this.currentMatch = 1;
-      }
-      this.emitNavigate();
+    if (this.disableNavigationPanel()) {
+      return;
     }
+    if (this.currentMatch === this.matchCount) {
+      this.currentMatch = 1;
+    } else {
+      this.currentMatch++;
+    }
+    this.emitNavigate();
   }
 
   private previousClick(): void {
-    if (!this.disableNavigationPanel()) {
-      if (this.currentMatch > 1) {
-        this.currentMatch--;
-      } else {
-        this.currentMatch = this.matchCount;
-      }
-      this.emitNavigate();
+    if (this.disableNavigationPanel()) {
+      return;
     }
+    if (this.currentMatch === 1) {
+      this.currentMatch = this.matchCount;
+    } else {
+      this.currentMatch--;
+    }
+    this.emitNavigate();
   }
 
-  private onInput(event) {
+  private onInput(event): void {
     if (this.disabled) {
       return;
     }
@@ -264,7 +271,7 @@ export class GuxContextSearchBeta {
     this.resetCurrentMatch();
   }
 
-  private emitNavigate() {
+  private emitNavigate(): void {
     this.navigate.emit(this.currentMatch);
   }
 }
