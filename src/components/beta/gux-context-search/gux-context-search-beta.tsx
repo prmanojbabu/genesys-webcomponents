@@ -7,8 +7,7 @@ import {
   JSX,
   Method,
   Prop,
-  State,
-  Watch
+  State
 } from '@stencil/core';
 
 import { buildI18nForComponent, GetI18nValue } from '../../../i18n';
@@ -25,7 +24,6 @@ import onDisabledChange from '../../../utils/on-disabled-change/on-disabled-chan
 })
 export class GuxContextSearchBeta {
   private inputSlottedElement: HTMLInputElement;
-  private navigateCountPanel: HTMLSpanElement;
 
   @Element()
   private root: HTMLGuxContextSearchBetaElement;
@@ -117,7 +115,6 @@ export class GuxContextSearchBeta {
           >
             <span
               class="gux-navigation-result"
-              ref={el => (this.navigateCountPanel = el)}
               aria-label={this.matchCountResult()}
             >
               {this.matchCountResult()}
