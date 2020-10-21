@@ -4,10 +4,10 @@ exports[`gux-context-search-beta #render should render default control no props 
 <gux-context-search-beta>
   <!---->
   <div class="gux-context">
-    <input type="text" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
+    <input type="text" style="padding-right: 83px;">
   </div>
 </gux-context-search-beta>
 `;
@@ -16,10 +16,10 @@ exports[`gux-context-search-beta #render should render default control no props 
 <gux-context-search-beta>
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
+    <input placeholder="Search" type="text" style="padding-right: 83px;">
   </div>
 </gux-context-search-beta>
 `;
@@ -28,11 +28,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" match-count="10">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-panel" title="1 of 10">
         <span aria-label="1 of 10" class="gux-navigation-result">
           1 of 10
@@ -56,11 +56,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
         <span aria-label="10 Matches" class="gux-navigation-result">
           10 Matches
@@ -84,11 +84,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
         <span aria-label="1 Match" class="gux-navigation-result">
           1 Match
@@ -112,11 +112,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
         <span aria-label="10 Matches" class="gux-navigation-result">
           10 Matches
@@ -140,11 +140,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1000000">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
         <span aria-label="1,000,000 Matches" class="gux-navigation-result">
           1,000,000 Matches
@@ -168,11 +168,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="1000000">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1,000,000 Matches">
         <span aria-label="1,000,000 Matches" class="gux-navigation-result">
           1,000,000 Matches
@@ -196,11 +196,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="0">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled Navigation Disable" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
         <span aria-label="0 Matches" class="gux-navigation-result">
           0 Matches
@@ -224,11 +224,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="10" match-count="10">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="10 of 10">
         <span aria-label="10 of 10" class="gux-navigation-result">
           10 of 10
@@ -252,11 +252,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with 1 match" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
         <span aria-label="1 of 1" class="gux-navigation-result">
           1 of 1
@@ -280,11 +280,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="10000" match-count="100000000">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with big match" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="10,000 of 100,000,000">
         <span aria-label="10,000 of 100,000,000" class="gux-navigation-result">
           10,000 of 100,000,000
@@ -308,11 +308,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1 of 1">
         <span aria-label="1 of 1" class="gux-navigation-result">
           1 of 1
@@ -336,11 +336,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1100" match-count="100000001">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1,100 of 100,000,001">
         <span aria-label="1,100 of 100,000,001" class="gux-navigation-result">
           1,100 of 100,000,001
@@ -364,11 +364,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
   <div class="gux-context gux-disabled">
-    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input disabled="true" placeholder="Search" type="text" value="Search Disabled with no Match" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
         <span aria-label="0 of 0" class="gux-navigation-result">
           0 of 0
@@ -392,11 +392,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" disable-navigation="true" match-count="10">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="10 Matches">
         <span aria-label="10 Matches" class="gux-navigation-result">
           10 Matches
@@ -420,11 +420,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="1">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="1 Match">
         <span aria-label="1 Match" class="gux-navigation-result">
           1 Match
@@ -448,11 +448,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1000" disable-navigation="true" match-count="100000000">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="100,000,000 Matches">
         <span aria-label="100,000,000 Matches" class="gux-navigation-result">
           100,000,000 Matches
@@ -476,11 +476,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" disable-navigation="true" match-count="0">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Navigation Disabled" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 Matches">
         <span aria-label="0 Matches" class="gux-navigation-result">
           0 Matches
@@ -504,11 +504,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1000" match-count="abc">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
         <span aria-label="0 of 0" class="gux-navigation-result">
           0 of 0
@@ -532,11 +532,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="100000" match-count="100">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-panel" title="1 of 100">
         <span aria-label="1 of 100" class="gux-navigation-result">
           1 of 100
@@ -560,11 +560,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1" match-count="1">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-panel" title="1 of 1">
         <span aria-label="1 of 1" class="gux-navigation-result">
           1 of 1
@@ -588,11 +588,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1000" match-count="100000">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-panel" title="1,000 of 100,000">
         <span aria-label="1,000 of 100,000" class="gux-navigation-result">
           1,000 of 100,000
@@ -616,11 +616,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor sit amet, lacinia blandit ultricies lorem aliquam, dui quam a viverra vivamus pellentesque, rhoncus aliquet proin eleifend." style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
         <span aria-label="0 of 0" class="gux-navigation-result">
           0 of 0
@@ -644,11 +644,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="0" match-count="0">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Default Search Text" style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-disabled gux-navigation-panel" title="0 of 0">
         <span aria-label="0 of 0" class="gux-navigation-result">
           0 of 0
@@ -672,11 +672,11 @@ exports[`gux-context-search-beta #render should render default control with all 
 <gux-context-search-beta current-match="1000" match-count="100000">
   <!---->
   <div class="gux-context">
-    <input placeholder="Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
     <div class="gux-search-icon">
       <gux-icon decorative="" iconname="ic-search"></gux-icon>
     </div>
-    <div>
+    <input placeholder="Search" type="text" value="Lorem ipsum dolor " style="padding-right: 83px;">
+    <div class="gux-context-control-panel">
       <div class="gux-navigation-panel" title="1,000 of 100,000">
         <span aria-label="1,000 of 100,000" class="gux-navigation-result">
           1,000 of 100,000

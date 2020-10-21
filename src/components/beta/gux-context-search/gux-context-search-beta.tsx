@@ -104,10 +104,10 @@ export class GuxContextSearchBeta {
   render() {
     return (
       <div class={{ 'gux-disabled': this.disabled, 'gux-context': true }}>
-        <slot />
         <div class="gux-search-icon">
           <gux-icon decorative iconName="ic-search"></gux-icon>
         </div>
+        <slot />
         {this.getNavigationPanel()}
       </div>
     );
@@ -117,7 +117,7 @@ export class GuxContextSearchBeta {
     if (this.showNavigationPanel()) {
       const disableNavigationPanel = this.disableNavigationPanel();
       return (
-        <div>
+        <div class="gux-context-control-panel">
           <div
             class={{
               'gux-navigation-panel': true,
