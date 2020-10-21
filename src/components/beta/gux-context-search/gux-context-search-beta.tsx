@@ -63,11 +63,6 @@ export class GuxContextSearchBeta {
 
   private i18n: GetI18nValue;
 
-  @Watch('currentMatch')
-  watchCurrentMatch() {
-    this.setPaddingForInput();
-  }
-
   /**
    * Clears the input.
    */
@@ -94,11 +89,6 @@ export class GuxContextSearchBeta {
     this.inputSlottedElement.addEventListener('input', e => this.onInput(e));
     this.setMatchCount();
     this.setCurrentMatch();
-    this.setPaddingForInput();
-  }
-
-  componentDidLoad() {
-    this.setPaddingForInput();
   }
 
   render() {
@@ -188,18 +178,6 @@ export class GuxContextSearchBeta {
       });
     }
   }
-  private setPaddingForInput(): void {
-    if (this.inputSlottedElement) {
-      let paddingWidth = 83;
-      if (this.navigateCountPanel && this.navigateCountPanel.clientWidth) {
-        paddingWidth = 83 + Math.ceil(this.navigateCountPanel.clientWidth);
-      }
-      this.inputSlottedElement.setAttribute(
-        'style',
-        `padding-right: ${paddingWidth}px`
-      );
-    }
-  }
 
   private showNavigationPanel(): boolean {
     return this.value !== '' ? true : false;
@@ -265,7 +243,6 @@ export class GuxContextSearchBeta {
       return;
     }
     this.value = event.target.value;
-    this.setPaddingForInput();
     this.resetCurrentMatch();
   }
 

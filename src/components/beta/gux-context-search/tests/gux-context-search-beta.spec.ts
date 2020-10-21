@@ -214,7 +214,6 @@ describe('gux-context-search-beta', () => {
     it('builds', async () => {
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component).toBeTruthy();
     });
 
@@ -222,7 +221,6 @@ describe('gux-context-search-beta', () => {
       component.matchCount = -1;
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component.matchCount).toBe(0);
     });
 
@@ -231,7 +229,6 @@ describe('gux-context-search-beta', () => {
       component.matchCount = 1;
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component.matchCount).toBe(1);
       expect(component.currentMatch).toBe(1);
     });
@@ -241,7 +238,6 @@ describe('gux-context-search-beta', () => {
       component.matchCount = -1;
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component.matchCount).toBe(0);
       expect(component.currentMatch).toBe(0);
     });
@@ -251,7 +247,6 @@ describe('gux-context-search-beta', () => {
       component.matchCount = 10;
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component.matchCount).toBe(10);
       expect(component.currentMatch).toBe(1);
     });
@@ -261,7 +256,6 @@ describe('gux-context-search-beta', () => {
       component.matchCount = 0;
       await component.componentWillLoad();
       component.render();
-      component.componentDidLoad();
       expect(component.matchCount).toBe(0);
       expect(component.currentMatch).toBe(0);
     });

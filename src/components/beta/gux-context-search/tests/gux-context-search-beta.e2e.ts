@@ -208,34 +208,18 @@ describe('gux-context-search-beta', () => {
         const nextButton = await page.find('.gux-next-button');
         const clearButton = await page.find('.gux-clear-button');
         const input = await element.find('input');
-        // Added to mock setPaddingForInput final state
-        await page.$eval('input', (elm: HTMLInputElement) => {
-          elm.setAttribute('style', `padding-right: 120px`);
-        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
         await previousButton.click();
-        // Added to mock setPaddingForInput final state
-        await page.$eval('input', (elm: HTMLInputElement) => {
-          elm.setAttribute('style', `padding-right: 120px`);
-        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
         await nextButton.click();
-        // Added to mock setPaddingForInput final state
-        await page.$eval('input', (elm: HTMLInputElement) => {
-          elm.setAttribute('style', `padding-right: 120px`);
-        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
         await clearButton.click();
-        // Added to mock setPaddingForInput final state
-        await page.$eval('input', (elm: HTMLInputElement) => {
-          elm.setAttribute('style', `padding-right: 120px`);
-        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
 
@@ -243,10 +227,6 @@ describe('gux-context-search-beta', () => {
         await input.press('KeyE');
         await input.press('KeyS');
         await input.press('KeyT');
-        // Added to mock setPaddingForInput final state
-        await page.$eval('input', (elm: HTMLInputElement) => {
-          elm.setAttribute('style', `padding-right: 120px`);
-        });
         await page.waitForChanges();
         expect(element.outerHTML).toMatchSnapshot();
       });
